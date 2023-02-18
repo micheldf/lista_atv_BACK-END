@@ -1,0 +1,13 @@
+import random
+
+numero_aleatorio = random.randint(0, 10)
+palpite = None
+
+while palpite != numero_aleatorio:
+    palpite = int(input("Adivinhe o número entre 0 e 10: "))
+    if palpite < numero_aleatorio:
+        print("Palpite baixo, tente novamente.")
+    elif palpite > numero_aleatorio:
+        print("Palpite alto, tente novamente.")
+    else:
+        print("Parabéns, você acertou o número!")
